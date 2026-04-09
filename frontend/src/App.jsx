@@ -3,7 +3,7 @@ import axios from "axios";
 import Calendar from "react-calendar";
 import 'react-calendar/dist/Calendar.css';
 
-const API = "http://localhost:5000/api/todos";
+const API = "/api/todos";
 
 function formatDate(date) {
   if (!date) return "";

@@ -6,9 +6,9 @@
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "backend/index.js" },
-    { "src": "/assets/(.*)", "dest": "frontend/dist/assets/$1" },
-    { "src": "/(.*)", "dest": "frontend/dist/$1", "check": true },
+    { "src": "/assets/(.*)", "dest": "frontend/assets/$1" },
+    { "src": "/(.*)", "dest": "frontend/$1", "check": true },
     { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 200, "dest": "frontend/dist/index.html" }
+    { "src": "/(.*)", "status": 200, "dest": "frontend/index.html" }
   ]
 }
